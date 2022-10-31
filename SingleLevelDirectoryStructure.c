@@ -1,7 +1,19 @@
 #include<stdio.h>
 #include<string.h>
-int i=0;
+int i=0, d=0;
 char dir[20][20];
+
+/*void createDirectory(){
+	char directory[20];
+	if(d==0){
+		d=1;
+		printf("Enter name of directory: ");
+		scanf("%s", &directory);
+		printf("Directory created\n");
+	}
+	else
+		printf("Directory exists already. Cannot create another one.");
+}*/
 
 void createFile(){
 	int k;
@@ -55,6 +67,10 @@ void searchFile(){
 
 void main(){
 	int y=1, c;
+	char directory[20];
+	printf("Enter name of directory: ");
+	scanf("%s", &directory);
+	printf("Directory created\n");
 	while(y==1){
 		printf("\nEnter choice:\n1. Create File\n2. Delete File\n3. Search File\n4. Display File\n5. Exit\n");
 		scanf("%i", &c);
