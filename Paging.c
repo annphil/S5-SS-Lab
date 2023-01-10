@@ -40,7 +40,7 @@ printf("\nEnter process no, and pagenumber and offset - ");
 
 scanf("%d %d %d", &x,&y, &offset);
 
-if(x>np || y=s[i] || offset>=ps)
+if(x>np || y>=s[i] || offset>=ps)
 
 printf("ninvalid Process or Page Number or offset");
   else
